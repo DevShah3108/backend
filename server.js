@@ -4,7 +4,7 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 // Configure CORS dynamically
 const allowedOrigins = process.env.FRONTEND_URL 
