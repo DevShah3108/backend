@@ -6,6 +6,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 const port = process.env.PORT || 3000;
 
+
 // Configure CORS dynamically
 const allowedOrigins = process.env.FRONTEND_URL 
   ? process.env.FRONTEND_URL.split(',') 
