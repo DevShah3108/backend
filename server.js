@@ -4,7 +4,7 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 // Configure CORS dynamically
 const allowedOrigins = process.env.FRONTEND_URL 
@@ -72,5 +72,5 @@ app.post("/api/send-email", async (req, res) => {
 // Start server with production settings
 app.listen(port, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${port}`);
-  console.log(`✅ Allowed origins: ${allowedOrigins.join(', ')}`);
+  console.log(`✅ Allowed origins: ${allowedOrigins.join(',')}`);
 });
